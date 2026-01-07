@@ -1,0 +1,28 @@
+{
+  "val_auc": 0.8740706882806272,
+  "target_fpr_for_T_high": 0.05,
+  "target_tpr_for_T_low_via_fnr": 0.9,
+  "T_high": {
+    "thr": 0.8260000000000001,
+    "tpr": 0.441132075471698,
+    "fpr": 0.04929577464788725,
+    "fnr": 0.5588679245283018,
+    "f1": 0.6094096181411078,
+    "tp": 2338,
+    "fp": 35,
+    "tn": 675,
+    "fn": 2962
+  },
+  "T_low": {
+    "thr": 0.431,
+    "tpr": 0.9001886792452829,
+    "fpr": 0.3295774647887319,
+    "fnr": 0.09981132075471696,
+    "f1": 0.9259582726826637,
+    "tp": 4771,
+    "fp": 234,
+    "tn": 476,
+    "fn": 529
+  },
+  "note": "Use: score>=T_high => FAKE, score<=T_low => REAL, else SUSPICIOUS. T_high chosen by FPR constraint + max TPR. T_low chosen by FNR constraint + max coverage."
+}
